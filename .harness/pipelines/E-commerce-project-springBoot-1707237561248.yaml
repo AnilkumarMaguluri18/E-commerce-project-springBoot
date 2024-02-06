@@ -1,0 +1,33 @@
+pipeline:
+  name: Build E-commerce-project-springBoot
+  identifier: Build_AnilkumarMaguluri18_E_commerce_project_springBoot_1707237592854
+  projectIdentifier: default_project
+  orgIdentifier: default
+  stages:
+    - stage:
+        name: Build
+        identifier: Build
+        type: CI
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Echo Welcome Message
+                  identifier: Echo_Welcome_Message
+                  spec:
+                    shell: Sh
+                    command: echo "Welcome to Harness CI"
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Docker
+            spec: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: account.Github_OAuth_1707237546946
+        repoName: AnilkumarMaguluri18/E-commerce-project-springBoot
+        build: <+input>
