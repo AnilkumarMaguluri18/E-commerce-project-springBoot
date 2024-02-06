@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_AnilkumarMaguluri18_E_commerce_project_springBoot_1707239417052-pr-trigger-input-set
+  identifier: Build_AnilkumarMaguluri18_E_commerce_project_springBoot_1707239417052prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_AnilkumarMaguluri18_E_commerce_project_springBoot_1707239417052
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
