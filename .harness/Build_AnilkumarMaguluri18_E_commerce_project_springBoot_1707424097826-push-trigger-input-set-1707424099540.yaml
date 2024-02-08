@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_AnilkumarMaguluri18_E_commerce_project_springBoot_1707424097826-push-trigger-input-set
+  identifier: Build_AnilkumarMaguluri18_E_commerce_project_springBoot_1707424097826pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_AnilkumarMaguluri18_E_commerce_project_springBoot_1707424097826
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
